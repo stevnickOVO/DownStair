@@ -16,7 +16,7 @@ public class coinControllor : MonoBehaviour
     {
         StayTime -= Time.deltaTime;
 
-        if (StayTime < 0)
+        if (StayTime < 0&&PlayerPosition!=null)
         {
             transform.position = Vector2.MoveTowards(transform.position, PlayerPosition.transform.position, Speed*Time.deltaTime);
         }

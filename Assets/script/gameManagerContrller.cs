@@ -27,13 +27,13 @@ public class gameManagerContrller : MonoBehaviour
         Time.timeScale = 0;
         lose_UI.SetActive(true);
         lose_UI.GetComponent<AudioSource>().Play();
+        Destroy(GameObject.Find("Player").gameObject);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             GameOver();
-            Destroy(other.gameObject);
         }
     }
     public void lose_BTN()

@@ -29,7 +29,7 @@ public class NPCGhostFace : MonoBehaviour
     public void downToDungeon()
     {
         GameObject player = GameObject.Find("Player").gameObject;
-        player.transform.position = new Vector2(0,5.2f);
+        player.transform.position = new Vector2(0,3f);
         player.GetComponent<PlayerController>().isShoot = true;
         SceneManager.LoadScene(1);
     }

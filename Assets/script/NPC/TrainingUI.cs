@@ -5,22 +5,22 @@ using UnityEngine.UI;
 
 public class TrainingUI : MonoBehaviour
 {
-    [SerializeField] float money;
+    [SerializeField] PlayerProperty money;
     [SerializeField] Text moneyText;
     private void Awake()
     {
-        money = GameObject.Find("Player").GetComponent<PlayerProperty>().money;
-        moneyText.text = money.ToString();
+        money = GameObject.Find("Player").GetComponent<PlayerProperty>();
+        moneyText.text = money.money.ToString();
     }
     private void Update()
     {
-        moneyText.text = money.ToString();
+        moneyText.text = money.money.ToString();
     }
     public void hpplusBTN()
     {
         if (moneyCheck())
         {
-            money -= 100;
+            money.money -= 100;
             GameObject.Find("Player").GetComponent<PlayerProperty>().MaxHP += 5;
             GameObject.Find("Player").GetComponent<PlayerProperty>().CurrHP += 5;
         }
@@ -29,12 +29,12 @@ public class TrainingUI : MonoBehaviour
     {
         if (moneyCheck())
         {
-            money -= 100;
+            money.money -= 100;
             GameObject.Find("Player").GetComponent<PlayerProperty>().attackValue += 1;
         }
     }
     public bool moneyCheck()
     {
-        return money >= 100;
+        return money.money >= 100;
     }
 }
