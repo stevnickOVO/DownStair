@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e1478ee3ca9364abc2a02eea41a5e2, type: 3}
+  m_Name: bunny
+  m_EditorClassIdentifier: 
+  speed: 2
+  MaxHP: 20
+  attackVaule: 20
+  currHp: 20
+  enemyEXP: 20
+  coinRangeMin: 20
+  coinRangeMax: 50
+  coinPefabs: {fileID: 2890191527570452159, guid: 34e76761f5d96934291c0705d51f8202,
+    type: 3}

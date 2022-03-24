@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d6ae67e428f014f997845af61ea8b6, type: 3}
+  m_Name: PowerUP
+  m_EditorClassIdentifier: 
+  titleName: "\u653B\u64CA\u529B\u589E\u52A0"
+  sprite: {fileID: 21300000, guid: 5c6b9e54d4505b648a9ebf0ace813d5c, type: 3}
+  explanation: "\u653B\u64CA\u529B+20%"
+  cardType: 0
+  BeeFriend: {fileID: 2305009306745420471, guid: dd95f848739e87f4998bd5ed00bbdf8a,
+    type: 3}
